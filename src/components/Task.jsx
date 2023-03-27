@@ -3,9 +3,6 @@ import { myTaskList } from '../utils/tasks';
 
 export const Task = (props) => {
 	const { name, state, onChange, isCompleted } = props;
-	const [isChecked, setIsChecked] = useState(
-		new Array(myTaskList.length).fill(false)
-	);
 
 	const handleOnChange = () =>{
 		onChange(name);
